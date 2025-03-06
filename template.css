@@ -1,0 +1,75 @@
+.card-template {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card__title-input, 
+.card__body-input {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    resize: none;
+}
+
+.card__title-input,
+.card__title-input::placeholder {
+    font-family: Pretendard Variable;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #14142B; 
+}
+
+.card__body-input,
+.card__body-input::placeholder {
+    height: 1.2em;    /* 텍스트 크기와 비슷한 높이 */
+    overflow: hidden; /* 스크롤바 제거 */
+    font-family: Pretendard Variable;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #6E7191;
+}
+
+.card__button-area {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__cancel-btn {
+    width: 100%;
+    height: 32px;
+    border-radius: 8px;
+    padding: 0px 8px;
+    background-color: #F7F7FC;
+    font-family: Pretendard Variable;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #6E7191;
+}
+
+.card__submit-btn {
+    width: 100%;
+    height: 32px;
+    border-radius: 8px;
+    padding: 0px 8px;
+    background-color: #007AFF;
+    opacity: 0.3;
+    font-family: Pretendard Variable;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FEFEFE;
+}

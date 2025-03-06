@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="icon.css">
     <link rel="stylesheet" href="action-history.css">
     <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="template.css">
 </head>
 
 <body>
+    <!-- 템플릿 모음 -->
+
     <header class="app-header">
         <h1 class="app-header__title">TASKIFY</h1>
         <button class="app-header__history-btn">
@@ -52,6 +55,28 @@
                     </button>
                 </div>
             </header>
+
+            <!-- <template id="card-template"> -->
+                <article class="card card-template">
+                    <div class="card__text-area">
+                        <form class="card__form">
+                            <div class="card__body">
+                                <input type="text" class="card__title-input" placeholder="제목을 입력하세요">
+                                <textarea class="card__body-input" placeholder="내용을 입력하세요"></textarea>
+                                <pre class="card__body-input" contenteditable="true" 
+                                data-placeholder="내용을 입력하세요"s>
+
+                                </pre>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card__button-area">
+                        <button type="button" class="card__cancel-btn btn">취소</button>
+                        <button type="submit" class="card__submit-btn btn">등록</button>
+                    </div>
+                </article>
+            <!-- </template> -->
+
             <article class="card">
                 <div class="card__text-area">
                     <div class="card__body">
